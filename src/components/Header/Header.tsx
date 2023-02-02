@@ -5,7 +5,6 @@ const Header: FC = () => {
   const data = [
     { title: "name", value: "junan chen" },
     { title: "focus", value: "frontend developer" },
-    { title: "connect", value: "xxx" },
   ];
 
   const list = data.map(({ title, value }) => (
