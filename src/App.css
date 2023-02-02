@@ -1,0 +1,160 @@
+.wrapper {
+  overflow: hidden;
+  position: relative;
+  height: 100%;
+}
+
+.info-box {
+  margin: 0 0 50px;
+}
+
+.h2, h2{
+  margin: 0 0 10px;
+  text-transform: uppercase;
+  font-family: "brandon-grotesque", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: 700;
+  color: #00a9b0;
+  font-size: 22px;
+  line-height: 1.21;
+}
+
+h3, .h3 {
+  font-weight: 400;
+  margin: 0 0 10px;
+  color: #000;
+  line-height: 1.2;
+  font-size: 23px;
+  font-family: "brandon-grotesque", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+}
+
+.year {
+  text-transform: uppercase;
+  font-family: "Brandon-grotesque", "Arial", "Helvetica Neue", "Helvetica", sans-serif;
+  font-weight: 900;
+  line-height: 1.2;
+  font-size: 15px;
+  color: #7f7e82;
+  margin: 0 0 12px;
+}
+
+.text-box {
+  color: #001225;
+  font-size: 19px;
+  line-height: 1.22;
+}
+
+.timeline-list {
+  position: relative;
+}
+
+.timeline-list > li {
+  margin: 0 0 55px;
+}
+
+@media screen and (min-width: 768px) {
+  .year.absolute {
+    width: 70px;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    margin: 0;
+  }
+
+  .timeline-list {
+    padding: 10px 0 10px;
+  }
+
+  .timeline-list > li {
+      position: relative;
+      padding: 0 0 0 110px;
+  }
+
+  .timeline-list > li:before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #001225;
+      position: absolute;
+      top: 8px;
+      left: 70px;
+      z-index: 1;
+  }
+
+  .timeline-list:before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #7f7e82;
+      position: absolute;
+      bottom: 0;
+      left: 70px;
+      z-index: 1;
+  }
+
+  .timeline-list > li:after {
+      content: "";
+      width: 2px;
+      position: absolute;
+      top: 10px;
+      left: 74px;
+      bottom: -65px;
+      background-image: linear-gradient(#ffffff, #7f7e82);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .info-box {
+    margin: 0 0 55px;
+  }
+
+  .h2, h2 {
+    margin: 0 0 19px;
+  }
+
+  h3, .h3 {
+    margin: 0 0 7px;
+  }
+
+  .year.absolute {
+    top: 1px;
+    width: 72px;
+  }
+
+  .text-box {
+    font-size: 19px;
+}
+
+  .timeline-list {
+      padding: 10px 0 27px;
+      margin: 0 0 70px;
+  }
+
+  .timeline-list > li {
+      margin: 0 0 112px;
+  }
+
+  .timeline-list > li:before {
+      width: 14px;
+      height: 14px;
+      top: 5px;
+      left: 73px;
+  }
+
+  .timeline-list:before {
+      width: 14px;
+      height: 14px;
+      left: 73px;
+  }
+
+  .timeline-list > li:after {
+      width: 4px;
+      left: 78px;
+      bottom: -120px;
+  }
+
+  .column-2 {
+    padding: 0 0 0 34px;
+  }
+ }

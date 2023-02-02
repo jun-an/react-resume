@@ -1,0 +1,56 @@
+.main {
+    width: 100%;
+    height: 100%;
+}
+
+.two-columns {
+    padding: 50px 25px 10px;
+    height: 100%;
+}
+
+@media screen and (min-width: 768px) {
+    .main {
+        padding-left: 270px;
+    }
+
+    .two-columns {
+        padding: 50px 30px 10px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .two-columns {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .column-1 {
+        width: 60%;
+        padding: 0 15px 0 0;
+    }
+
+    .column-1 {
+        width: 40%;
+        padding: 0 0 0 15px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .main {
+        padding-left: 336px;
+    }
+
+    .two-columns {
+        padding: 48px 61px 10px;
+    }
+}
+
+@media screen and (min-width: 1600px) {
+    .main {
+        padding-left: 471px;
+    }
+}
+
+
