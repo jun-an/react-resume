@@ -51,6 +51,29 @@ h3, .h3 {
   margin: 0 0 55px;
 }
 
+.bullet-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.bullet-list > li {
+  margin: 0 0 15px;
+  position: relative;
+  padding: 0 0 0 18px;
+}
+
+.bullet-list > li:before {
+  content: "";
+  background: #231f20;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  position: absolute;
+  top: 6px;
+  left: 2px;
+}
+
 @media screen and (min-width: 768px) {
   .year.absolute {
     width: 70px;
@@ -101,6 +124,16 @@ h3, .h3 {
       left: 74px;
       bottom: -65px;
       background-image: linear-gradient(#ffffff, #7f7e82);
+  }
+
+  .timeline-list > li:after {
+    content: "";
+    width: 2px;
+    position: absolute;
+    top: 10px;
+    left: 74px;
+    bottom: -65px;
+    background-image: linear-gradient(#ffffff, #7f7e82);
   }
 }
 
@@ -156,5 +189,24 @@ h3, .h3 {
 
   .column-2 {
     padding: 0 0 0 34px;
+  }
+
+  .bullet-list {
+    padding: 15px 0 0;
+  }
+
+  .timeline-list > li:after {
+    width: 4px;
+    left: 78px;
+    bottom: -120px;
+  }
+
+  .bullet-list > li {
+    margin: 0 0 21px;
+    padding: 0 0 0 17px;
+  }
+
+  .bullet-list > li:before {
+    top: 5px;
   }
  }

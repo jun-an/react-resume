@@ -4,6 +4,7 @@ import "./Header.css";
 const Header: FC = () => {
   const data = [
     { title: "name", value: "junan chen" },
+    { title: "focus", value: "frontend developer" },
     { title: "connect", value: "xxx" },
   ];
 
